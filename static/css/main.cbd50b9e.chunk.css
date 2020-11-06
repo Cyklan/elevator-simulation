@@ -1,0 +1,2 @@
+body{margin:0}:root{--light-blue:#89c4f4;--blue:#6bb9f0}.App{display:flex;background-color:#282c34;width:100vw;height:100vh;justify-content:center;align-items:center}.cabin{background-color:var(--blue);height:4rem;width:2rem;opacity:1;position:absolute;transition:all 2s ease-in-out}.top{transform:translateY(0)}.middle{transform:translateY(13rem)}.bottom{transform:translateY(26rem)}.shaft{height:30rem;width:1rem;background:var(--light-blue);opacity:1;display:flex;justify-content:center}
+/*# sourceMappingURL=main.cbd50b9e.chunk.css.map */
