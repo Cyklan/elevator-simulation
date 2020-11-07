@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import './App.css';
-import Elevator from "./Elevator"
+import "./App/App.css";
+import Elevator from "./App/Elevator"
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   
   const elevators = []
   for (let i = 0; i < elevatorCount; i++) {
-    elevators.push(<Elevator />)
+    elevators.push(<Elevator key={i}/>)
   }
 
   return (

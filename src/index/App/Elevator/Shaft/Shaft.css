@@ -1,8 +1,7 @@
 .shaft {
     height: 30rem;
     width: 1rem;
-    background: var(--light-blue);
-    opacity: 1;
     display: flex;
     justify-content: center;
+    margin: 10rem;
 }

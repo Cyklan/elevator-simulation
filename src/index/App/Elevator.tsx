@@ -1,5 +1,6 @@
-import React, {Fragment, useState} from "react"
+import React, { useState } from "react"
 import Shaft from "./Elevator/Shaft"
+import { getRandomColorSet } from "./Elevator/Colors"
 import { Direction } from "./Elevator/Direction"
 
 function Elevator() {
@@ -8,7 +9,7 @@ function Elevator() {
     const [direction, setDirection] = useState(Direction.Down)
     
     return (
-        <Shaft idle={idle} direction={direction} />
+        <Shaft idle={idle} direction={direction} colors={getRandomColorSet()}/>
     )
 }
 
