@@ -1,19 +1,13 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import "./App/App.css";
-import Elevator from "./App/Elevator"
+import Elevator from "./App/Elevator";
 
 function App() {
-  
-  const [elevatorCount, setElevatorCount] = useState(1)
-  
-  const elevators = []
-  for (let i = 0; i < elevatorCount; i++) {
-    elevators.push(<Elevator key={i}/>)
-  }
+  const [elevatorShafts, setElevatorCount] = useState(2);
 
   return (
     <div className="App">
-      {elevators}
+      <Elevator shaftCount={elevatorShafts} floorCount={3} />
     </div>
   );
 }

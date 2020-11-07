@@ -1,7 +1,7 @@
 .cabin {
-    height: 4rem;
-    width: 2rem;
-    opacity: 1;
-    position: absolute;
-    transition: all 2s ease-in-out;
+  height: 4rem;
+  width: 2rem;
+  opacity: 1;
+  position: absolute;
+  transition: all 2s ease-in-out;
 }
