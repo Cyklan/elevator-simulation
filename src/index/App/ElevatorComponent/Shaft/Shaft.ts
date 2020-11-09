@@ -8,16 +8,16 @@ export default class Shaft {
   public floorCount: number;
   public passengers: Passenger[];
   public direction: Direction;
-  public idle: boolean;
   public colors: Colorset;
+  public destinations: number[];
 
   constructor(floorCount: number) {
     this.floor = 0;
     this.floorCount = floorCount;
     this.passengers = new Array<Passenger>();
     this.direction = Direction.None;
-    this.idle = true;
     this.colors = getRandomColorSet();
+    this.destinations = [];
   }
 
   public moveUp() {
@@ -26,5 +26,13 @@ export default class Shaft {
 
   public moveDown() {
     this.floor = Math.min(this.floorCount, this.floor + 1);
+  }
+
+  public moveToNextFloor() {
+    if (this.idle) return;
+  }
+
+  public get idle(): boolean {
+    return this.destinations.length === 0;
   }
 }

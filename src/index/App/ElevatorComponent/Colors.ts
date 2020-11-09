@@ -1,6 +1,9 @@
 export const getRandomColorSet = (): Colorset =>
   colorSets[Math.floor(Math.random() * colorSets.length)];
 
+export const getRandomPassengerColor = (): string =>
+  passengerColors[Math.floor(Math.random() * passengerColors.length)];
+
 export type Colorset = {
   bg: string;
   fg: string;
@@ -32,4 +35,12 @@ const colorSets: Colorset[] = [
     bg: "#54b980",
     fg: "#2ecc71",
   },
+];
+
+const passengerColors: string[] = [
+  "#ffdd59",
+  "#ef5777",
+  "#1e272e",
+  "#ffcccc",
+  "#c56cf0",
 ];

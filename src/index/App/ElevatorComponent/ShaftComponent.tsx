@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { moveMessagePortToContext } from "worker_threads";
+import React from "react";
 import { Colorset } from "./Colors";
-import { Direction } from "./Direction";
 import Cabin from "./Shaft/Cabin";
 import "./Shaft/Shaft.css";
 
 type ShaftProps = {
   floor: number;
-  direction: Direction;
   colors: Colorset;
 };
 
-function ShaftComponent({ floor, direction, colors }: ShaftProps) {
+function ShaftComponent({ floor, colors }: ShaftProps) {
   const shaftStyles = {
     backgroundColor: colors.bg,
   };

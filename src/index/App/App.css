@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
 .App {
   display: flex;
   background-color: #282c34;
@@ -7,3 +9,18 @@
   align-items: center;
 }
 
+.start-button {
+  position: absolute;
+  bottom: 50px;
+  font-size: 34px;
+  font-family: "Unica One", sans-serif;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 18rem;
+}
